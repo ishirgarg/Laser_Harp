@@ -1011,6 +1011,108 @@
 				)
 			)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector:USB_C_Receptacle_USB2.0"
 			(pin_names
 				(offset 1.016)
@@ -6011,6 +6113,102 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 129.54 229.87)
@@ -6029,6 +6227,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1baf5a32-47dd-4e4e-84dd-c17b3e873807")
+	)
+	(junction
+		(at 78.74 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "252bacd6-f630-42cc-b593-604a0b166cba")
+	)
+	(junction
+		(at 57.15 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "363857e1-840d-4d7b-8851-92fe8a2d0aa2")
 	)
 	(junction
 		(at 240.03 66.04)
@@ -6109,10 +6319,28 @@
 		(uuid "8d107efc-1815-48d9-88a6-5d913eef0a0f")
 	)
 	(junction
+		(at 72.39 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e6d23c7-2a61-47a8-bebb-53d3ea7da764")
+	)
+	(junction
+		(at 74.93 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f7dae9a-c4e2-412e-8286-40f024c3a655")
+	)
+	(junction
 		(at 72.39 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9dd091e4-dae4-4706-ab1a-b89a722b6580")
+	)
+	(junction
+		(at 66.04 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a2d692fa-5287-48c7-88af-1c83cfa88e2f")
 	)
 	(junction
 		(at 68.58 241.3)
@@ -6424,16 +6652,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 99.06) (xy 82.55 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23adeb2a-43c1-4525-b72a-39607c8ff5ee")
-	)
-	(wire
-		(pts
 			(xy 73.66 342.9) (xy 73.66 340.36)
 		)
 		(stroke
@@ -6664,6 +6882,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 99.06) (xy 58.42 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59ff6acc-00ce-491b-bed8-ce91984571dd")
+	)
+	(wire
+		(pts
 			(xy 129.54 262.89) (xy 129.54 266.7)
 		)
 		(stroke
@@ -6681,6 +6909,16 @@
 			(type default)
 		)
 		(uuid "5ff00b82-9e94-4fca-b6dc-549a555f490b")
+	)
+	(wire
+		(pts
+			(xy 73.66 99.06) (xy 78.74 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63d669af-3e16-4b75-9347-f98a7ac3d4ae")
 	)
 	(wire
 		(pts
@@ -6731,6 +6969,16 @@
 			(type default)
 		)
 		(uuid "68740625-e842-4dee-835f-3ef02352d789")
+	)
+	(wire
+		(pts
+			(xy 66.04 109.22) (xy 66.04 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "694eacfc-73a6-448e-b791-67323e807407")
 	)
 	(wire
 		(pts
@@ -6914,6 +7162,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 106.68) (xy 66.04 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d1fcab7-457c-4366-b525-af9d1bb1e443")
+	)
+	(wire
+		(pts
 			(xy 83.82 40.64) (xy 83.82 49.53)
 		)
 		(stroke
@@ -6971,6 +7229,16 @@
 			(type default)
 		)
 		(uuid "9d42595a-bd22-441b-9ee5-ca855422fa19")
+	)
+	(wire
+		(pts
+			(xy 74.93 39.37) (xy 85.09 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d559393-0f62-43c7-a1c2-a7a9d62dd37e")
 	)
 	(wire
 		(pts
@@ -7194,7 +7462,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 99.06) (xy 58.42 99.06)
+			(xy 49.53 99.06) (xy 57.15 99.06)
 		)
 		(stroke
 			(width 0)
@@ -7264,6 +7532,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 99.06) (xy 82.55 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "debaefc5-0112-4f09-91d1-38f266a89062")
+	)
+	(wire
+		(pts
 			(xy 353.06 74.93) (xy 367.03 74.93)
 		)
 		(stroke
@@ -7281,16 +7559,6 @@
 			(type default)
 		)
 		(uuid "e00d5423-2e81-4d23-88bf-e7379687e35c")
-	)
-	(wire
-		(pts
-			(xy 66.04 106.68) (xy 66.04 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0a7f91a-bc43-4e27-9214-dff328bcbe62")
 	)
 	(wire
 		(pts
@@ -7458,6 +7726,76 @@
 		)
 		(uuid f6c0f150-4ae8-4fcb-8643-96fa085c926a)
 	)
+	(text "7 lasers to be the strings of our laser harp\n"
+		(exclude_from_sim no)
+		(at 181.356 302.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "14a0264a-c623-4339-91b4-200c775216a7")
+	)
+	(text "Speaker driven by MAX98357 chip using I2S"
+		(exclude_from_sim no)
+		(at 349.758 44.196 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2c3ff2d9-dee5-42f5-be90-e2c872049890")
+	)
+	(text "Voltage divider for reference voltage at 3/4 VDD"
+		(exclude_from_sim no)
+		(at 68.58 220.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3a741577-6cf4-48dc-a7c6-6eeed821a4fb")
+	)
+	(text "Comparators to filter out noise and in case the ADC pins do not work as expected"
+		(exclude_from_sim no)
+		(at 196.596 152.146 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3ee7714f-0f9f-4200-961b-9523a0dee08e")
+	)
+	(text "ESD Protection"
+		(exclude_from_sim no)
+		(at 440.436 46.482 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7621d016-5d46-4589-8dbd-9bc42640ee60")
+	)
+	(text "7 Photoresistors for light sensing"
+		(exclude_from_sim no)
+		(at 177.8 209.042 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "93865853-7145-4424-af89-3e2241fd8957")
+	)
+	(text "Switch to control lasers"
+		(exclude_from_sim no)
+		(at 71.12 312.674 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "aeb3c5f9-d651-4e6a-83e9-2d3f0a8facf9")
+	)
 	(text "USB_Connector"
 		(exclude_from_sim no)
 		(at 40.64 27.94 0)
@@ -7490,6 +7828,16 @@
 			(justify left bottom)
 		)
 		(uuid "dae900ec-ce3c-4d9d-9a7b-733cd133dc55")
+	)
+	(text "Speaker driven directly by GPIO"
+		(exclude_from_sim no)
+		(at 62.23 138.938 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f100eb69-881e-45c4-bfc2-2140129da331")
 	)
 	(label "A2"
 		(at 186.69 165.1 0)
@@ -9911,6 +10259,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 78.74 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "469ccb70-d049-4bd3-89c9-325516bc063b")
+		(property "Reference" "TP2"
+			(at 81.28 94.4879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 81.28 97.0279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Plated_Hole_D2.0mm"
+			(at 83.82 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 78.74 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "47e952eb-ef81-4cd9-a5b8-40cebbb33ad8")
+		)
+		(instances
+			(project "ESP32_S2_SOLO_N4 Kicad Reference Design"
+				(path "/781e630a-908b-4db2-a21c-46db7fc2ebca"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 80.01 40.64 90)
 		(unit 1)
@@ -10321,6 +10736,73 @@
 			(project "ESP32_S2_SOLO_N4 Kicad Reference Design"
 				(path "/781e630a-908b-4db2-a21c-46db7fc2ebca"
 					(reference "LS1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 72.39 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5c2bedb3-44e5-444a-8d55-a9d0d26fc9e1")
+		(property "Reference" "TP1"
+			(at 74.93 34.7979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 74.93 37.3379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Plated_Hole_D2.0mm"
+			(at 77.47 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 72.39 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4c34301d-e50e-4c85-8376-bb0257567c0c")
+		)
+		(instances
+			(project "ESP32_S2_SOLO_N4 Kicad Reference Design"
+				(path "/781e630a-908b-4db2-a21c-46db7fc2ebca"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -11343,6 +11825,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 49.53 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "82affad9-3116-46c1-b8dc-9e360d096cf3")
+		(property "Reference" "TP3"
+			(at 52.07 94.4879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 52.07 97.0279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Plated_Hole_D2.0mm"
+			(at 54.61 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 49.53 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48f7438c-8f12-415c-913e-115a38606ce6")
+		)
+		(instances
+			(project "ESP32_S2_SOLO_N4 Kicad Reference Design"
+				(path "/781e630a-908b-4db2-a21c-46db7fc2ebca"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 175.26 132.08 0)
 		(unit 1)
@@ -11472,6 +12021,73 @@
 			(project "ESP32_S2_SOLO_N4 Kicad Reference Design"
 				(path "/781e630a-908b-4db2-a21c-46db7fc2ebca"
 					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 66.04 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "84ca2e37-53b1-47b9-abfa-cd54c627d085")
+		(property "Reference" "#FLG02"
+			(at 64.135 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 62.23 109.2199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 66.04 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88ca704e-a4b1-4bd4-9332-5ab214c66ecf")
+		)
+		(instances
+			(project "ESP32_S2_SOLO_N4 Kicad Reference Design"
+				(path "/781e630a-908b-4db2-a21c-46db7fc2ebca"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -11956,6 +12572,72 @@
 			(project "ESP32_S2_SOLO_N4 Kicad Reference Design"
 				(path "/781e630a-908b-4db2-a21c-46db7fc2ebca"
 					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 85.09 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "95acf893-407a-4b9e-9a6b-620313ff0e77")
+		(property "Reference" "#FLG01"
+			(at 85.09 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 85.09 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 85.09 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14739a46-6f7c-4b35-91bb-4a70b17b12a0")
+		)
+		(instances
+			(project "ESP32_S2_SOLO_N4 Kicad Reference Design"
+				(path "/781e630a-908b-4db2-a21c-46db7fc2ebca"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -13168,7 +13850,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 82.55 68.58 0)
 			(effects
 				(font
@@ -15083,7 +15765,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 87.63 68.58 0)
 			(effects
 				(font
@@ -15257,6 +15939,72 @@
 			(project "ESP32_S2_SOLO_N4 Kicad Reference Design"
 				(path "/781e630a-908b-4db2-a21c-46db7fc2ebca"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 57.15 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3f22e12-1a34-4408-8f78-bc1c2ecefb92")
+		(property "Reference" "#FLG03"
+			(at 57.15 97.155 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 57.15 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 57.15 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0f05552b-87dd-4267-90f0-ae886aaefc40")
+		)
+		(instances
+			(project "ESP32_S2_SOLO_N4 Kicad Reference Design"
+				(path "/781e630a-908b-4db2-a21c-46db7fc2ebca"
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
